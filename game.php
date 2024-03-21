@@ -1,11 +1,3 @@
-<?php
-session_start();
-
-if (!isset($_SESSION['id']) || $_SESSION['id'] === NULL) {
-    header("Location:  index.html");
-    exit();
-}
-?>
 
 <!DOCTYPE html>
 
