@@ -38,25 +38,7 @@
             <div id = "level">Speed:<br></div>
         </div>
     </div>
-    <div id="leaderboard">
-        <table id="ranking-table">
-            <tr>
-                <th>#</th>
-                <th>Usuário</th>
-                <th>Hi-Score</th>
-            </tr>
-            <?php
-            $posicao = 1;
-            while ($row = $result->fetch_assoc()) {
-                echo "<tr>";
-                echo "<td class='conteudo'>" . $posicao . "</td>";
-                echo "<td class='conteudo'>" . $row['username'] . "</td>";
-                echo "<td class='conteudo'>" . $row['score'] . "</td>";
-                echo "</tr>";
-                $posicao++;
-            }
-            ?>
-        </table>
+
     </div>
 </body>
 
